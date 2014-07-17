@@ -2,10 +2,16 @@
     "name": "webhooks-io-client",
     "description": "Nodejs client for webhooks.io.",
     "homepage": "https://github.com/webhooks-io/nodejs-client",
-    "keywords":"webhooks,callbacks",
+    "keywords":[
+        "webhooks",
+        "callbacks"
+        ],
+    "main" : "./lib/webhooksio",
     "version": "0.0.1",
     "license": "MIT",
-    "dependencies": {},
+    "dependencies": {
+        "request": "2.x.x"
+    },
     "engines": {
          "node": ">= 0.3.6"
     },

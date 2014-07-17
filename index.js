@@ -1,0 +1,1 @@
+module.exports = require('./lib/webhooksio.js').WebhooksAPI_v1_0();
