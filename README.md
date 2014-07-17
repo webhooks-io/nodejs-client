@@ -1,7 +1,7 @@
 Webhooks.io Node.js Client (beta)
 =======
 
-The full documention can be found here and this client mirrors each of the corresponding API calls as much as possible.  If you see an option in the API it can be passed as a parameter in the API call.
+The [full documention can be found here](http://webhooks.io/docs/api) and this client mirrors each of the corresponding API calls as much as possible.  If you see an option in the API it can be passed as a parameter in the API call.
 
 Getting Started
 -----
@@ -12,7 +12,7 @@ Getting Started
 npm install webhooks-io-client
 ```
 
-2. Obtain your Webhooks.io API credentials
+2. [Obtain your Webhooks.io API credentials](https://console.webhooks.io)
 
 3. Create a Webhooks.io Client Object:
 
