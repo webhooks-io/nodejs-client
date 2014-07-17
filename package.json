@@ -7,7 +7,7 @@
         "callbacks"
         ],
     "main" : "./lib/webhooksio",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
     "dependencies": {
         "request": "2.x.x"
