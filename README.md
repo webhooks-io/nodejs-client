@@ -61,7 +61,7 @@ wh_api.registerAccount(options, function(error, body){});
 Creates a sub account.
 
 ```
-wh_api.createSubAccount(account_idoptions, function(error, body){});
+wh_api.createSubAccount(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -79,7 +79,7 @@ wh_api.createSubAccount(account_idoptions, function(error, body){});
 Lists all sub accounts user an account.
 
 ```
-wh_api.getSubAccounts(account_idoptions, function(error, body){});
+wh_api.getSubAccounts(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -96,7 +96,7 @@ wh_api.getSubAccounts(account_idoptions, function(error, body){});
 Returns the details of a specfic account.
 
 ```
-wh_api.getAccount(account_idoptions, function(error, body){});
+wh_api.getAccount(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -109,7 +109,7 @@ wh_api.getAccount(account_idoptions, function(error, body){});
 Updates the details on an account.
 
 ```
-wh_api.updateAccount(account_idoptions, function(error, body){});
+wh_api.updateAccount(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -127,7 +127,7 @@ wh_api.updateAccount(account_idoptions, function(error, body){});
 Deletes an account or sub account.
 
 ```
-wh_api.deleteAccount(account_idoptions, function(error, body){});
+wh_api.deleteAccount(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -142,7 +142,7 @@ wh_api.deleteAccount(account_idoptions, function(error, body){});
 Adds an application to an account
 
 ```
-wh_api.createApplication(account_idoptions, function(error, body){});
+wh_api.createApplication(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -166,7 +166,7 @@ wh_api.createApplication(account_idoptions, function(error, body){});
 Updates an Application.
 
 ```
-wh_api.updateApplication(account_id, application_idoptions, function(error, body){});
+wh_api.updateApplication(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -191,7 +191,7 @@ wh_api.updateApplication(account_id, application_idoptions, function(error, body
 Returns the details for a specfic application.
 
 ```
-wh_api.getApplication(account_id, application_idoptions, function(error, body){});
+wh_api.getApplication(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -205,7 +205,7 @@ wh_api.getApplication(account_id, application_idoptions, function(error, body){}
 Returns a collection of applications for an account.
 
 ```
-wh_api.getApplications(account_idoptions, function(error, body){});
+wh_api.getApplications(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -218,7 +218,7 @@ wh_api.getApplications(account_idoptions, function(error, body){});
 Deletes an application.
 
 ```
-wh_api.deleteApplication(account_id, application_idoptions, function(error, body){});
+wh_api.deleteApplication(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -232,7 +232,7 @@ wh_api.deleteApplication(account_id, application_idoptions, function(error, body
 Adds a version to an application.
 
 ```
-wh_api.createApplicationVersion(account_id, application_idoptions, function(error, body){});
+wh_api.createApplicationVersion(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -254,7 +254,7 @@ wh_api.createApplicationVersion(account_id, application_idoptions, function(erro
 Updates an application version.
 
 ```
-wh_api.updateApplicationVersion(account_id, application_id, application_version_idoptions, function(error, body){});
+wh_api.updateApplicationVersion(account_id, application_id, application_version_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -277,7 +277,7 @@ wh_api.updateApplicationVersion(account_id, application_id, application_version_
 Returns the details for a specfic application version.
 
 ```
-wh_api.getApplicationVersion(account_id, application_id, application_version_idoptions, function(error, body){});
+wh_api.getApplicationVersion(account_id, application_id, application_version_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -292,7 +292,7 @@ wh_api.getApplicationVersion(account_id, application_id, application_version_ido
 Returns a collection of versions for an application.
 
 ```
-wh_api.getApplicationVersions(account_id, application_idoptions, function(error, body){});
+wh_api.getApplicationVersions(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -306,7 +306,7 @@ wh_api.getApplicationVersions(account_id, application_idoptions, function(error,
 Deletes a version for an application.
 
 ```
-wh_api.deleteApplicationVersion(account_id, application_id, application_version_idoptions, function(error, body){});
+wh_api.deleteApplicationVersion(account_id, application_id, application_version_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -323,7 +323,7 @@ wh_api.deleteApplicationVersion(account_id, application_id, application_version_
 Adds a bucket to an account
 
 ```
-wh_api.createBucket(account_idoptions, function(error, body){});
+wh_api.createBucket(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -341,7 +341,7 @@ wh_api.createBucket(account_idoptions, function(error, body){});
 Updates a bucket.
 
 ```
-wh_api.updateBucket(account_id, bucket_idoptions, function(error, body){});
+wh_api.updateBucket(account_id, bucket_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -360,7 +360,7 @@ wh_api.updateBucket(account_id, bucket_idoptions, function(error, body){});
 Returns the details for a specfic bucket.
 
 ```
-wh_api.getBucket(account_id, bucket_idoptions, function(error, body){});
+wh_api.getBucket(account_id, bucket_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -374,7 +374,7 @@ wh_api.getBucket(account_id, bucket_idoptions, function(error, body){});
 Returns a collection of buckets for an account.
 
 ```
-wh_api.getBuckets(account_idoptions, function(error, body){});
+wh_api.getBuckets(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -387,7 +387,7 @@ wh_api.getBuckets(account_idoptions, function(error, body){});
 Deletes a bucket.
 
 ```
-wh_api.deleteBucket(account_id, bucket_idoptions, function(error, body){});
+wh_api.deleteBucket(account_id, bucket_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -403,7 +403,7 @@ wh_api.deleteBucket(account_id, bucket_idoptions, function(error, body){});
 Adds an input to an account
 
 ```
-wh_api.createInput(account_idoptions, function(error, body){});
+wh_api.createInput(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -431,7 +431,7 @@ wh_api.createInput(account_idoptions, function(error, body){});
 Updates the details for an input.
 
 ```
-wh_api.updateInput(account_id, input_idoptions, function(error, body){});
+wh_api.updateInput(account_id, input_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -459,7 +459,7 @@ wh_api.updateInput(account_id, input_idoptions, function(error, body){});
 Returns the details for a specfic input.
 
 ```
-wh_api.getInput(account_id, input_idoptions, function(error, body){});
+wh_api.getInput(account_id, input_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -473,7 +473,7 @@ wh_api.getInput(account_id, input_idoptions, function(error, body){});
 Returns a collection of inputs for an account.
 
 ```
-wh_api.getInputs(account_id, bucket_idoptions, function(error, body){});
+wh_api.getInputs(account_id, bucket_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -492,7 +492,7 @@ wh_api.getInputs(account_id, bucket_idoptions, function(error, body){});
 Deletes an input.
 
 ```
-wh_api.deleteInput(account_id, input_idoptions, function(error, body){});
+wh_api.deleteInput(account_id, input_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -508,7 +508,7 @@ wh_api.deleteInput(account_id, input_idoptions, function(error, body){});
 Adds an destination for an input.
 
 ```
-wh_api.createDestination(account_id, input_idoptions, function(error, body){});
+wh_api.createDestination(account_id, input_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -539,7 +539,7 @@ wh_api.createDestination(account_id, input_idoptions, function(error, body){});
 Updates the details of an destination.
 
 ```
-wh_api.updateDestination(account_id, destination_idoptions, function(error, body){});
+wh_api.updateDestination(account_id, destination_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -570,7 +570,7 @@ wh_api.updateDestination(account_id, destination_idoptions, function(error, body
 Returns the details for a specfic destination.
 
 ```
-wh_api.getDestination(account_id, destination_idoptions, function(error, body){});
+wh_api.getDestination(account_id, destination_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -584,7 +584,7 @@ wh_api.getDestination(account_id, destination_idoptions, function(error, body){}
 Returns a collection of destinations.
 
 ```
-wh_api.getDestinations(account_id, input_idoptions, function(error, body){});
+wh_api.getDestinations(account_id, input_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -602,7 +602,7 @@ wh_api.getDestinations(account_id, input_idoptions, function(error, body){});
 Deletes an destination.
 
 ```
-wh_api.deleteDestination(account_id, destination_idoptions, function(error, body){});
+wh_api.deleteDestination(account_id, destination_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -618,7 +618,7 @@ wh_api.deleteDestination(account_id, destination_idoptions, function(error, body
 Creates a consumer for an application
 
 ```
-wh_api.createConsumer(account_id, application_idoptions, function(error, body){});
+wh_api.createConsumer(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -638,7 +638,7 @@ wh_api.createConsumer(account_id, application_idoptions, function(error, body){}
 Returns a list of all the consumers for a particular application.
 
 ```
-wh_api.getConsumers(account_id, application_idoptions, function(error, body){});
+wh_api.getConsumers(account_id, application_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -652,7 +652,7 @@ wh_api.getConsumers(account_id, application_idoptions, function(error, body){});
 Updates the details for a particular consumer.
 
 ```
-wh_api.updateConsumer(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.updateConsumer(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -671,7 +671,7 @@ wh_api.updateConsumer(account_id, application_id, consumer_idoptions, function(e
 Get the details for a particular consumer.
 
 ```
-wh_api.getConsumer(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.getConsumer(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -686,7 +686,7 @@ wh_api.getConsumer(account_id, application_id, consumer_idoptions, function(erro
 Removes a consumer from a particular application.
 
 ```
-wh_api.deleteConsumer(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.deleteConsumer(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -701,7 +701,7 @@ wh_api.deleteConsumer(account_id, application_id, consumer_idoptions, function(e
 Returns all the destinations for the consumer of a given application.
 
 ```
-wh_api.getConsumerDestinations(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.getConsumerDestinations(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -721,7 +721,7 @@ wh_api.getConsumerDestinations(account_id, application_id, consumer_idoptions, f
 Adds an destination for the consumer of a given application.
 
 ```
-wh_api.createConsumerDestination(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.createConsumerDestination(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -755,7 +755,7 @@ wh_api.createConsumerDestination(account_id, application_id, consumer_idoptions,
 Updates an destination for the consumer of a given application.
 
 ```
-wh_api.updateConsumerDestination(account_id, application_id, consumer_id, destination_idoptions, function(error, body){});
+wh_api.updateConsumerDestination(account_id, application_id, consumer_id, destination_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -789,7 +789,7 @@ wh_api.updateConsumerDestination(account_id, application_id, consumer_id, destin
 Deletes an destination for the consumer of a given application.
 
 ```
-wh_api.deleteConsumerDestination(account_id, application_id, consumer_id, destination_idoptions, function(error, body){});
+wh_api.deleteConsumerDestination(account_id, application_id, consumer_id, destination_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -805,7 +805,7 @@ wh_api.deleteConsumerDestination(account_id, application_id, consumer_id, destin
 Returns all the buckets for the consumer of a given application.
 
 ```
-wh_api.getConsumerBuckets(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.getConsumerBuckets(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -820,7 +820,7 @@ wh_api.getConsumerBuckets(account_id, application_id, consumer_idoptions, functi
 Sends a webhook to a particular consumer of an application for the given bucket_key.
 
 ```
-wh_api.sendConsumerWebhookRequest(account_id, application_id, consumer_id, bucket_keyoptions, function(error, body){});
+wh_api.sendConsumerWebhookRequest(account_id, application_id, consumer_id, bucket_key, options, function(error, body){});
 ```
 #####Parameters
 
@@ -836,7 +836,7 @@ wh_api.sendConsumerWebhookRequest(account_id, application_id, consumer_id, bucke
 Checks to see if the consumer is subscribed to a given event or set of events.  If the event query param is not passed the complete list of events will be returned.
 
 ```
-wh_api.getConsumerSubscription(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.getConsumerSubscription(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -857,7 +857,7 @@ wh_api.getConsumerSubscription(account_id, application_id, consumer_idoptions, f
 Returns a log of all messages for a given consumer.
 
 ```
-wh_api.getConsumerRequestLog(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.getConsumerRequestLog(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -879,7 +879,7 @@ wh_api.getConsumerRequestLog(account_id, application_id, consumer_idoptions, fun
 Generates a client token to be used with the embedded views.
 
 ```
-wh_api.createClientToken(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.createClientToken(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -899,7 +899,7 @@ wh_api.createClientToken(account_id, application_id, consumer_idoptions, functio
 Returns the HTML for the embedded view.
 
 ```
-wh_api.getEmbeddedViewHtml(account_id, application_id, consumer_idoptions, function(error, body){});
+wh_api.getEmbeddedViewHtml(account_id, application_id, consumer_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -922,7 +922,7 @@ wh_api.getEmbeddedViewHtml(account_id, application_id, consumer_idoptions, funct
 Returns a general overview.
 
 ```
-wh_api.getOverviewReport(account_idoptions, function(error, body){});
+wh_api.getOverviewReport(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -946,7 +946,7 @@ wh_api.getOverviewReport(account_idoptions, function(error, body){});
 Returns a general summary report.
 
 ```
-wh_api.getSummaryReport(account_idoptions, function(error, body){});
+wh_api.getSummaryReport(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -967,7 +967,7 @@ wh_api.getSummaryReport(account_idoptions, function(error, body){});
 Returns a log of all messages.
 
 ```
-wh_api.getRequestLog(account_idoptions, function(error, body){});
+wh_api.getRequestLog(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -990,7 +990,7 @@ wh_api.getRequestLog(account_idoptions, function(error, body){});
 Returns the details regarding an incoming message.
 
 ```
-wh_api.getIncomingMessage(account_id, incoming_message_idoptions, function(error, body){});
+wh_api.getIncomingMessage(account_id, incoming_message_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1008,7 +1008,7 @@ wh_api.getIncomingMessage(account_id, incoming_message_idoptions, function(error
 Returns the details regarding an outgoing message, including all attempts
 
 ```
-wh_api.getOutgoingMessage(account_id, outgoing_message_idoptions, function(error, body){});
+wh_api.getOutgoingMessage(account_id, outgoing_message_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1022,7 +1022,7 @@ wh_api.getOutgoingMessage(account_id, outgoing_message_idoptions, function(error
 Returns the basic information regarding the status of the outgoing request.
 
 ```
-wh_api.getOutgoingMessageStatus(account_id, outgoing_message_idoptions, function(error, body){});
+wh_api.getOutgoingMessageStatus(account_id, outgoing_message_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1055,7 +1055,7 @@ wh_api.login(options, function(error, body){});
 Allows a user to change their password.  Either the existing password or change key must be passed...and must match in order for this call to be successful.
 
 ```
-wh_api.changePassword(account_id, user_idoptions, function(error, body){});
+wh_api.changePassword(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1076,7 +1076,7 @@ wh_api.changePassword(account_id, user_idoptions, function(error, body){});
 Provides a user a way to lookup their own API token.  This is used when using ST or client-bearer-token authentication so the user can get a longer lasting API token.  This operation can only be carried out for the currently authenticated user.
 
 ```
-wh_api.getAPIToken(account_id, user_idoptions, function(error, body){});
+wh_api.getAPIToken(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1106,7 +1106,7 @@ wh_api.resetPassword(options, function(error, body){});
 Looks up the meta data for the password change key.
 
 ```
-wh_api.lookupPasswordChangeKey(password_change_keyoptions, function(error, body){});
+wh_api.lookupPasswordChangeKey(password_change_key, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1119,7 +1119,7 @@ wh_api.lookupPasswordChangeKey(password_change_keyoptions, function(error, body)
 Adds a user to an account.
 
 ```
-wh_api.createUser(account_idoptions, function(error, body){});
+wh_api.createUser(account_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1142,7 +1142,7 @@ wh_api.createUser(account_idoptions, function(error, body){});
 Updates a users account information.
 
 ```
-wh_api.updateUser(account_id, user_idoptions, function(error, body){});
+wh_api.updateUser(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1165,7 +1165,7 @@ wh_api.updateUser(account_id, user_idoptions, function(error, body){});
 Returns the details for a specfic user.
 
 ```
-wh_api.getUser(account_id, user_idoptions, function(error, body){});
+wh_api.getUser(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1179,7 +1179,7 @@ wh_api.getUser(account_id, user_idoptions, function(error, body){});
 Returns a collection of users.
 
 ```
-wh_api.getUsers(account_id, user_idoptions, function(error, body){});
+wh_api.getUsers(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1193,7 +1193,7 @@ wh_api.getUsers(account_id, user_idoptions, function(error, body){});
 Deletes a user.
 
 ```
-wh_api.deleteUser(account_id, user_idoptions, function(error, body){});
+wh_api.deleteUser(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1207,7 +1207,7 @@ wh_api.deleteUser(account_id, user_idoptions, function(error, body){});
 Handles validating the email address once the user has clicked the validation link in an email.
 
 ```
-wh_api.verifyEmailAddress(email_verification_keyoptions, function(error, body){});
+wh_api.verifyEmailAddress(email_verification_key, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1220,7 +1220,7 @@ wh_api.verifyEmailAddress(email_verification_keyoptions, function(error, body){}
 Resends a verification email for a user.
 
 ```
-wh_api.resendVerificationEmail(account_id, user_idoptions, function(error, body){});
+wh_api.resendVerificationEmail(account_id, user_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1260,7 +1260,7 @@ wh_api.getPlans(options, function(error, body){});
 Returns the details of a specific plan.
 
 ```
-wh_api.getPlan(plan_idoptions, function(error, body){});
+wh_api.getPlan(plan_id, options, function(error, body){});
 ```
 #####Parameters
 
@@ -1297,7 +1297,7 @@ wh_api.getRetryPolicies(options, function(error, body){});
 Returns the details of a specific retry policy.
 
 ```
-wh_api.getRetryPolicy(policy_idoptions, function(error, body){});
+wh_api.getRetryPolicy(policy_id, options, function(error, body){});
 ```
 #####Parameters
 
