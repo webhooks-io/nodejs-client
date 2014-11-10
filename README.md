@@ -611,6 +611,126 @@ wh_api.deleteDestination(account_id, destination_id, options, function(error, bo
 * ```options``` - Structure of the possible options.
 * ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
 
+###Recipes
+
+####Create Recipe
+
+Adds a Recipe to an account
+
+```
+wh_api.createRecipe(account_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+#####Options
+
+* ```name``` (required) - Name for the recipe. (example: My Recipe)
+* ```sample_code``` - Sample code used to pass to the recipe during editing to test script.
+* ```type``` (required) - The type of recipe, either input or desination. (example: input)
+* ```notes``` - Any notes required to help understand the recipe. (example: This is used to transform the payload to work with Slack webhooks.)
+* ```recipe_draft``` (required) - During development, this is the receipe that is saved. (example: return { x: 1, x: 2 };)
+
+####Update Recipe
+
+Updates a Recipe.
+
+```
+wh_api.updateRecipe(account_id, recipe_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```recipe_id``` -  (example: REe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+#####Options
+
+* ```name``` (required) - Name for the recipe. (example: My Recipe)
+* ```sample_code``` - Sample code used to pass to the recipe during editing to test script.
+* ```type``` (required) - The type of recipe, either input or desination. (example: input)
+* ```notes``` - Any notes required to help understand the recipe. (example: This is used to transform the payload to work with Slack webhooks.)
+* ```recipe_draft``` (required) - During development, this is the receipe that is saved. (example: return { x: 1, x: 2 };)
+
+####Publish Recipe
+
+Publishes the draft recipe so it can be used as the production recipe.
+
+```
+wh_api.publishRecipe(account_id, recipe_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```recipe_id``` -  (example: REe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+####Get Recipe
+
+Returns the details for a specfic recipe.
+
+```
+wh_api.getRecipe(account_id, recipe_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```recipe_id``` -  (example: REe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+####List Recipe
+
+Returns a collection of recipes for an account.
+
+```
+wh_api.getRecipes(account_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+####Delete Recipe
+
+Deletes a Recipe.
+
+```
+wh_api.deleteRecipe(account_id, recipe_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```recipe_id``` -  (example: REe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+####Test Recipe
+
+Provides the ability to test a recipe to ensure the output is correct.  The recipe MUST be wrapped in 'function wh(){}' and return exit([data]) as shown in the sample below.
+
+```
+wh_api.testRecipe(account_id, options, function(error, body){});
+```
+#####Parameters
+
+* ```account_id``` -  (example: ACe987d754d82a419e8c54c2185ed0ef29)
+* ```options``` - Structure of the possible options.
+* ```callback``` (required) - Function to be called after api call completes. (example: function(error, body){})
+
+#####Options
+
+* ```sample_code``` - Sample code to be used during the testing of this recipe. (example: {"name": "Sample Code", "details": "This is a sample test of the recipe processor"})
+* ```type``` (required) - The type of recipe, either input or destination. (example: input)
+* ```recipe``` (required) - The recipe to be tested. (example: function wh(){ result.data = {"name": data.name, "client_id": 8000}; exit(result); })
+* ```event_type``` - The event type. (example: invoice.create)
+
 ###Providers
 
 ####Create Consumer
